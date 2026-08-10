@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>配布サイト</title>
+		<link rel="icon" href="./meta/icon/icon.ico">
+<style>
+	@font-face {
+		font-family:"defaultfont";
+		src: url("./meta/font/font.ttf") format("truetype")
+	}
+	body {
+		margin:0;
+		background-image:url("./image/background.png");
+		background-size:cover;
+		font-family: "defaultfont";
+	}
+	#main {
+		position:absolute;
+		background-color:rgba(128,128,128,0.7);
+		height:100%;
+		width:50%;
+		left:25%;
+		color:white;
+		-webkit-text-stroke:1px #000;
+		text-stroke:1px #000;
+	}
+	#header {
+		width:100%;
+	}
+	#yoko {
+		display:flex;
+	}
+	#button {
+		background-image:url("./image/backgroundbutton.png");
+		background-size:cover;
+		position:absolute;
+		right:0;
+		height:5%;
+	}
+	#warning {
+		color:red;
+	}
+</style>
+	</head>
+	<body>
+		<span id=main>
+			<img src=./image/header.png id=header>
+			<br>
+			<h1>yamasitag配布サイト</h1>
+			<br>
+			<span id=yoko><h2 id=version>alpha1.0</h2>&emsp;<button id=button>ダウンロード</button></a></span>
+			<br>
+			<br>
+			<br>
+			<hr>
+			<br>
+			<h1 id=warning>注意</h1>
+			<br>
+			<h2 id=moji>このyamasitagはandoroid専用アプリケーションです。このアプリケーションを動作させるにはmeta quest2以上を推奨しています。meta quest以外のandroidデバイス以外の動作は確認していないので推奨しません。このアプリケーションによって損害が出たとしても責任は負いません。自己責任です。</h2>
+		</span>
+		<script>
+			//button要素
+			var button = document.getElementById("button");
+			//button要素が押されたらclickbuttonを実行する
+			button.addEventListener("click",clickbutton);
+			//clickbutton関数
+			function clickbutton () {
+				//game.zipにアクセスしてダウンロードさせる
+				window.location.href = "./game/game.zip";
+			}
+		</script>
+	</body>
+</html>
