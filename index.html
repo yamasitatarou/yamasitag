@@ -9,14 +9,15 @@
 	}
 	body {
 		margin:0;
+		background-repeat: no-repeat;
 		background-image:url("./image/background.png");
 		background-size:cover;
 		font-family: "defaultfont";
+		background-attachment: fixed;
 	}
 	#main {
 		position:absolute;
 		background-color:rgba(128,128,128,0.7);
-		height:100%;
 		width:50%;
 		left:25%;
 		color:white;
@@ -39,6 +40,9 @@
 	#warning {
 		color:red;
 	}
+	#bug {
+		color:red;
+	}
 </style>
 	</head>
 	<body>
@@ -47,7 +51,7 @@
 			<br>
 			<h1>yamasitag配布サイト</h1>
 			<br>
-			<span id=yoko><h2 id=version>Beta1.5</h2>&emsp;<button id=button>ダウンロードリンク</button></a></span>
+			<span id=yoko><h2 id=version>Beta1.6</h2>&emsp;<button id=button>ダウンロードリンク</button></span>
 			<br>
 			<br>
 			<br>
@@ -55,7 +59,32 @@
 			<br>
 			<h1 id=warning>注意</h1>
 			<br>
-			<h2 id=moji>このyamasitagはandoroid専用アプリケーションです。このアプリケーションを動作させるにはmeta quest2以上を推奨しています。meta quest以外のandroidデバイス以外の動作は確認していないので推奨しません。このアプリケーションによって損害が出たとしても責任は負いません。自己責任です。</h2>
+			<h2 id=moji>このyamasitagはandoroid専用アプリケーションです。このアプリケーションを動作させるにはmeta quest2以上を推奨しています。meta quest以外のandroidデバイス以外の動作は確認していないので推奨しません。このアプリケーションによって損害が出たとしても責任は負いません。自己責任です。そしてこのサイトはスマホ向けではありません。パソコンやmeta quest browserの横画面を想定して作成されています。</h2>
+			<br>
+			<br>
+			<hr>
+			<br>
+			<h1>変更履歴</h1>
+			<h1>Beta 1.6</h1>
+			<br>
+			<h2>SkyBox追加。サイトに変更履歴を追加。サイトの注意書きを変更</h2>
+			<br>
+			<h2>プレイヤーの手に当たり判定を追加、イベント修正</h2>
+			<br>
+			<h2 id=bug>バグ要素、未検証</h2>
+			<br>
+			<h1>Beta1.5</h1>
+			<br>
+			<h2>ゲーム容量がでかくなったためmediafireを経由してダウンロード</h2>
+			<br>
+			<h2>変更履歴をサイトに追加したことによる背景画像の繰り返しを無効</h2>
+			<br>
+			<h2>背景画像の移動を固定。main要素の高さを自動に</h2>
+			<br>
+			<h2>遊具を追加。プレイヤーの手のマテリアルを修正</h2>
+			<br>
+			<h2 id=bug>バグ要素、イベントが発生しない</h2>
+			<br>
 		</span>
 		<script>
 			//button要素
@@ -65,7 +94,7 @@
 			//clickbutton関数
 			function clickbutton () {
 				//game.zipにアクセスしてダウンロードさせる
-				window.location.href = "https://www.mediafire.com/file/lh6k42lrid8vvdu/game.zip/file";
+				window.location.href = "https://www.mediafire.com/file/833ssq52rfae1lz/game.zip/file";
 			}
 		</script>
 	</body>
